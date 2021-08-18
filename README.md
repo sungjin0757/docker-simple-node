@@ -3,6 +3,7 @@
 ## 🚀 STUDY
 
 - Dockerfile 
+
 ```
 #base Image
 FROM node:10
@@ -22,11 +23,11 @@ COPY ./ ./
 CMD ["node","server.js"]
 ```
 
-	1. docker built -t
-	2. docker run
-		1. docker run
-		2. docker -v run
-		docker volume을 사용하는 것을 의미.
-		코드 수정 시 마다 
-		도커 이미지를 다시 build해야한다는 번거로움 해결
-		copy대신 local file들을 매핑 시켜주는 방식
+1. docker built -t
+2. docker run
+	1. docker run
+	2. docker -v run
+	docker volume을 사용하는 것을 의미.
+	코드 수정 시 마다 
+	도커 이미지를 다시 build해야한다는 번거로움 해결
+	copy대신 local file들을 매핑 시켜주는 방식
